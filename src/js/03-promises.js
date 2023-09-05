@@ -11,7 +11,7 @@ function createPromise(position, delay) {
         Notiflix.Notify.success(text);
         console.log(text);
       });
-      // Fulfill
+      /// Fulfill
     } else {
       return Promise.reject(`Rejected promise ${position} in ${delay}ms`).catch(
         error => {
@@ -19,7 +19,7 @@ function createPromise(position, delay) {
           console.log(error);
         }
       );
-      // Reject
+      /// Reject
     }
   }, delay);
 }
